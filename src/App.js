@@ -1,8 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./Components/Assets/Navbar/Navbar";
 
 function App() {
-  return <h1>hello first day of e commerceh1</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
