@@ -8,6 +8,7 @@ import LoginPage from "./Context/Pages/LoginPage";
 import Navbar from "./Components/Assets/Navbar/Navbar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Hero from "./Components/Assets/Assets/Hero/Hero";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
+      <Hero />
     </div>
   );
 }

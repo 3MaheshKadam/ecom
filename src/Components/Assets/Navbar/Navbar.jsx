@@ -20,8 +20,7 @@ const Navbar = () => {
               setMenu("shop");
             }}
           >
-            Shop
-            {<Link to="/Shop"></Link>}
+            {<Link to="/Shop">Shop</Link>}
             {menu === "shop" && <hr />}
           </li>
           <li
@@ -29,8 +28,7 @@ const Navbar = () => {
               setMenu("mens");
             }}
           >
-            Mens
-            {<Link to="/mens"></Link>}
+            {<Link to="/mens">Mens</Link>}
             {menu === "mens" && <hr />}
           </li>
           <li
@@ -38,7 +36,8 @@ const Navbar = () => {
               setMenu("womens");
             }}
           >
-            Women
+            {<Link to="/womens">Women</Link>}
+
             {menu === "womens" && <hr />}
           </li>
           <li
@@ -46,18 +45,24 @@ const Navbar = () => {
               setMenu("kids");
             }}
           >
-            Kids
-            {<Link to="/kids"></Link>}
+            {<Link to="/kids">Kid</Link>}
             {menu === "kids" && <hr />}
           </li>
         </ul>
         <div className="nav-login-cart">
-          <button>Login</button>
-          <img src={cart_icon} alt="" />
+          {
+            <Link to="/LoginPage">
+              <button>Login</button>
+            </Link>
+          }
+          {
+            <Link to="Cart">
+              <img src={cart_icon} alt="" />
+            </Link>
+          }
           <div className="nav-cart-count">0</div>
         </div>
       </div>
-      <h1>hello</h1>
     </>
   );
 };
