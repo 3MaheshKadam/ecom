@@ -1,14 +1,17 @@
 import "./App.css";
 
-import Shop from "./Context/Pages/Shop";
-import Product from "./Context/Pages/Product";
-import ShopCategory from "./Context/Pages/ShopCategory";
-import Cart from "./Context/Pages/Cart";
-import LoginPage from "./Context/Pages/LoginPage";
+import Shop from "./Pages/Shop";
+import Product from "./Pages/Product";
+import ShopCategory from "./Pages/ShopCategory";
+// import ShopCategory from "./Pages/ShopCategory";
+import Cart from "./Pages/Cart";
+import LoginPage from "./Pages/LoginPage";
 import Navbar from "./Components/Assets/Navbar/Navbar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Hero from "./Components/Assets/Assets/Hero/Hero";
+import Footer from "./Components/Footer/Footer";
+// import Hero from "./Components/Assets/Assets/Hero/Hero";
+// import Hero from "./Components/Hero/Hero";
 
 function App() {
   return (
@@ -29,8 +32,9 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Hero />
+      {/* <Hero /> */}
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Hero.css";
-import hand_icon from "../hand_icon.png";
-import arrow from "../arrow.png";
-import heroimg from "../hero_image.png";
+import hand_icon from "../Assets/Assets/hand_icon.png";
+import arrow from "../Assets/Assets/arrow.png";
+import heroimg from "../Assets/Assets/hero_image.png";
 const Hero = () => {
   return (
     <div className="hero">
